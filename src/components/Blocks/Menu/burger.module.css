@@ -1,0 +1,30 @@
+.burger{
+    display: none;
+    cursor: pointer;
+    @media screen and (max-width: 885px) {
+        display: block;
+        position: relative;
+        right: 40px;
+        z-index: 12;
+    }
+}
+.line {
+    width: 19px;
+    height: 1px;
+    background-color: black;
+    margin-bottom: 5px;
+}
+.active.line{
+    background-color: #FFF;
+    margin-bottom: 0;
+}
+.active.line:nth-child(1){
+    transform: rotate(45deg);
+    margin-bottom: -1px;
+}
+.active.line:nth-child(2){
+    display: none;
+}
+.active.line:nth-child(3){
+    transform: rotate(-45deg);
+}

@@ -1,0 +1,40 @@
+@import "../../../styles/vars.scss";
+
+.object {
+  width: 290px;
+  font-family: $fontPlayfair;
+  color: $color3;
+
+  &__img {
+    max-width: 290px;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  &__text{
+    display: flex;
+    flex-direction: column;
+    min-height: 135px;
+    padding: 0 5px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 23px;
+    margin-bottom: 10px;
+    flex: 0 0 auto;
+  }
+
+  &__description{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    flex: 1 0 auto;
+  }
+
+  &__link{
+    flex: 0 0 auto;
+    margin: 23px 0 0 0;
+  }
+}

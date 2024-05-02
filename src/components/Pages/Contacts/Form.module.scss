@@ -1,0 +1,64 @@
+@import "../../../styles/vars.scss";
+
+.form{
+  width: 693px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 885px) {
+    width: 100%;
+  }
+
+  &__title{
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: $fontPlayfair;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 43px;
+    color: $color3;
+  }
+  &__input{
+    width: 100%;
+    background-color: $color2;
+    border: 1px solid $color6;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 15px 17px;
+    outline: none;
+  }
+  &__textarea, &__input{
+    font-family: $fontPlayfair;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  &__textarea::placeholder, &__input::placeholder{
+    color: $color7;
+  }
+  &__textarea{
+    min-height: 100px;
+    resize: none;
+  }
+  &__button{
+    display: block;
+    margin-left: auto;
+    margin-bottom: 60px;
+    padding: 10px 36px;
+    background-color: $color2;
+    font-family: $fontPlayfair;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    border: 1px solid $color3;
+    transition: 200ms ease-in;
+    cursor: pointer;
+    &:hover{
+      background-color: $color3;
+      color: $color1;
+      border: 1px solid $color1;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+@import "./../../../styles/vars";
+
+.contactsList{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    max-width: 445px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    font-family: $fontPlayfair;
+
+    &__elements{
+        font-weight: 400;
+    }
+
+    &__elements_address, &__markers_address{
+        display: flex;
+        flex-direction: column;
+        min-height: 205px;
+    }
+
+    &__row{
+        display: flex;
+        gap: 30px;
+    }
+
+    &__item{
+        min-width: 70px;
+        margin-bottom: 30px;
+
+        &:last-child{
+            margin-bottom: 0;
+        }
+
+        &_phone{
+            font-family: $fontTimes;
+        }
+    }
+}
+
+.footer__list {
+    color: #FFFFFF;
+    max-width: 295px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+}

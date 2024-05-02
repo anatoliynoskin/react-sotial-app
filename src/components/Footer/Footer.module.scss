@@ -1,0 +1,132 @@
+$color1: #FFFFFF;
+$color2: #F5F5F5;
+$color3: #000000;
+$color4: #AFDCD1;
+$color5: #1C1C1C;
+$color6: #414141;
+$color7: #949393;
+
+$fontPlayfair: 'Playfair Display', serif;
+$fontOpenSans: 'Open Sans', sans-serif;
+$fontTimes: 'Times New Roman';
+
+.footer{
+  padding: 45px 0 40px 0;
+  background-color: $color3;
+  &__container{
+    max-width: 875px;
+    margin: 0 auto;
+
+    @media (max-width: 885px) {
+      max-width: 520px;
+    }
+
+    @media (max-width: 545px) {
+      padding: 0 10px;
+    }
+  }
+  &__header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__logo{
+    color: $color1;
+    margin-bottom: 40px;
+    .logo__text{
+      font-size: 18px;
+    }
+  }
+  &__menu,&__button{
+    margin-bottom: 58px;
+    @media (max-width: 885px) {
+      display: none;
+    }
+    .menu__link{
+      color: $color1;
+      &::after{
+        display: none;
+      }
+    }
+  }
+  &__main{
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 885px) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    @media (max-width: 545px) {
+      gap: 10px;
+    }
+  }
+  &__list{
+    color: $color1;
+    max-width: 295px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+
+    @media (max-width: 885px) {
+      max-width: 350px;
+    }
+  }
+  &__left{
+    @media (max-width: 885px) {
+      align-self: flex-start;
+    }
+  }
+  &__form{
+    width: 373px;
+    margin-top: 25px;
+    @media (max-width: 885px) {
+      width: 100%;
+    }
+  }
+  &__input{
+    width: 100%;
+    background-color: $color5;
+    border: 1px solid $color6;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    padding: 6px 9px;
+    outline: none;
+  }
+  &__textarea, &__input{
+    font-family: $fontPlayfair;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 13px;
+
+    color: $color1;
+  }
+  &__textarea::placeholder, &__input::placeholder{
+    color: $color7;
+  }
+  &__textarea{
+    min-height: 56px;
+    resize: none;
+  }
+  &__button{
+    display: block;
+    margin-left: auto;
+    padding: 8px 13px;
+    background-color: $color1;
+    font-family: $fontPlayfair;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 1px;
+    border: 1px solid $color3;
+    transition: 200ms ease-in;
+    cursor: pointer;
+    &:hover{
+      background-color: $color3;
+      color: $color1;
+      border: 1px solid $color1;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.card-link {
+    width: 109px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+    margin: 23px auto 0 auto;
+    padding: 8px 12px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #000000;
+    -webkit-transition: 200ms ease-in;
+    transition: 200ms ease-in;
+}
+
+.card-link::after {
+    top: 1px;
+    height: 8px;
+}
+
+.card-link:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.card-link:hover::after {
+    background: url("./../images/icons/card_arrow_white.svg") center center no-repeat;
+}

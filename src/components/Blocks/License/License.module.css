@@ -1,0 +1,24 @@
+.license {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+    margin-bottom: 60px;
+}
+@media (max-width: 1280px) {
+    .license {
+        flex-direction: column;
+        margin: 0 auto 40px auto;
+        width: calc(100% - 200px);
+    }
+}
+@media (max-width: 885px) {
+    .license {
+        width: calc(100% - 100px);
+    }
+}
+@media (max-width: 545px) {
+    .license {
+        width: 100%;
+        gap: 25px;
+    }
+}

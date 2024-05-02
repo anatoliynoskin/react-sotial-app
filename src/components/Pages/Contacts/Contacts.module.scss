@@ -1,0 +1,27 @@
+@import "../../../styles/vars.scss";
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 60px;
+
+  @media screen and (max-width: 885px) {
+    align-items: center;
+  }
+
+  @media screen and (max-width: 545px) {
+    flex-direction: column-reverse;
+  }
+}
+.info{
+  max-height: 210px;
+}
+.address{
+  flex: 1 0 auto;
+}
+.map{
+  width: 744px;
+  height: 469px;
+  margin-top: 5px;
+}

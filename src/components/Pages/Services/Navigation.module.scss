@@ -1,0 +1,65 @@
+@import "./../../../styles/vars";
+
+.navigation{
+  max-width: 408px;
+  width: 100%;
+
+  @media (max-width: 1280px) {
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+  }
+
+  @media (max-width: 885px) {
+    max-width: 450px;
+    margin: 10px auto 20px auto;
+  }
+
+  @media (max-width: 545px) {
+    max-width: 100%;
+    margin: 10px auto 30px auto;
+  }
+}
+.item{
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  background-color: $color4;
+  font-family: $fontPlayfair;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 25px;
+  text-align: center;
+  transition: 200ms ease-in;
+  cursor: pointer;
+
+  &:hover{
+    z-index: 2;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.5);
+  }
+
+  @media (max-width: 1280px) {
+    text-align: left;
+  }
+}
+.item_active{
+  z-index: 3;
+  width: calc(100% + 8px);
+  left: -4px;
+  background-color: $color3;
+  color: $color1;
+  box-shadow: 0px 0px 13px #000000;
+
+  &:hover{
+    z-index: 3;
+    box-shadow: 0px 0px 13px #000000;
+  }
+}
+.link{
+  padding: 27px 52px;
+  color: inherit;
+  text-decoration: none;
+}

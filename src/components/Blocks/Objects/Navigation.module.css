@@ -1,0 +1,57 @@
+.nav {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+.button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 39px;
+    height: 39px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    background-color: #AFDCD1;
+    transition: 200ms ease-in;
+}
+.button svg {
+    position: relative;
+    left: 2px;
+}
+.button:hover {
+    background-color: #000000;
+}
+.button:hover svg path {
+    fill: #AFDCD1;
+}
+.button_reverse {
+    transform: rotate(180deg);
+}
+.button_reverse svg {
+    left: 0px;
+}
+.link {
+    padding: 9px 32px 10px 22px;
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 200ms ease-in;
+}
+.link:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}

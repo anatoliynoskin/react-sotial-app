@@ -1,0 +1,18 @@
+.cardLink{
+    width: 109px;
+    padding: 8px 12px;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    border: 1px solid #000000;
+    transition: 200ms ease-in;
+}
+.cardLink:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+}

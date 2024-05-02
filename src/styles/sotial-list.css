@@ -1,0 +1,8 @@
+.sotial-list {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+.sotial-list__img {
+    height: 22px;
+}

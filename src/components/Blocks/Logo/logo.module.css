@@ -1,0 +1,31 @@
+.logo {
+    text-decoration: none;
+    margin-bottom: 25px;
+    @media screen and (max-width: 885px) {
+        margin-bottom: 0;
+    }
+}
+.img {
+    display: block;
+    margin: 0 auto;
+}
+@media (max-width: 885px) {
+    .img {
+        width: 33px;
+    }
+}
+.text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    color: #000000;
+}
+.footerText{
+    color: #ffffff;
+}
+
+@media (max-width: 885px) {
+    .text {
+        font-size: 11px;
+    }
+}

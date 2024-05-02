@@ -1,0 +1,91 @@
+.hero {
+    position: relative;
+    min-height: 793px;
+    background: url("./images/hero_bg.jpg") center center no-repeat;
+    background-size: cover;
+}
+@media (max-width: 885px) {
+    .hero {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+    }
+}
+@media (max-width: 545px) {
+    .hero {
+        width: calc(100% + 20px);
+        margin-left: -10px;
+    }
+}
+.textBlock {
+    position: absolute;
+    left: -25px;
+    top: 160px;
+    width: 404px;
+    min-height: 266px;
+    padding: 30px 40px 50px 40px;
+    box-sizing: border-box;
+    background-color: #000000;
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+@media (max-width: 885px) {
+    .textBlock {
+        left: auto;
+        top: auto;
+        right: 0;
+        bottom: 26px;
+        padding: 12px 17px 21px 17px;
+        min-height: auto;
+    }
+}
+@media (max-width: 545px) {
+    .textBlock {
+        width: 293px;
+        padding: 9px 12px 19px 12px;
+    }
+}
+.title {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 42px;
+}
+@media (max-width: 885px) {
+    .title {
+        font-size: 42px;
+        line-height: 56px;
+        margin-bottom: 15px;
+    }
+}
+.subtitle {
+    font-size: 28px;
+    line-height: 37px;
+    margin-bottom: 15px;
+}
+@media (max-width: 885px) {
+    .subtitle {
+        font-size: 24px;
+        line-height: 29px;
+        margin-bottom: 0;
+    }
+}
+.link {
+    color: #ffffff;
+    font-size: 19px;
+    line-height: 25px;
+    text-decoration: none;
+    transition: 100ms ease-in;
+}
+@media (max-width: 885px) {
+    .link {
+        font-size: 17px;
+        line-height: 21px;
+    }
+}
+.link::after {
+    background: url("images/icons/arrow_hero.svg") center center no-repeat;
+}
+.link:hover::after {
+    margin-left: 10px;
+}
